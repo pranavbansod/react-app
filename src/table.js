@@ -26,13 +26,12 @@ class Table extends Component {
 
     };
 
-
     render() {
-        const { characters, removeCharacter } = this.state;
+        const { characters} = this.state;
         return (
             <table>
                 <TableHead/>
-                <TableBody characters={characters} removeCharacter={removeCharacter}/>
+                <TableBody characters={characters} removeCharacter={this.removeCharacter}/>
             </table>
         )
     }
